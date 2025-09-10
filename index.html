@@ -1,20 +1,152 @@
-<html>
- <head>
-  <link rel="stylesheet"
-   href="style.css">
- </head>
- <body>
-  <img
-   src=".\caceres_john.jpeg"
-   width="200" height="150">
-  <h1>John Caceres</h1>
-  <h2>Front-End Developer<h2>
-    <p>Welcome to my page!</p>
-    <a
-     href="https://www.instagram.com/jj.cac">Instagram</a>
-    <a
-     href="https://www.linkedin.com/in/johnjcaceres">LinkedIn</a>
-    <a
-     href="https://github.com/jjcac">GitHub</a>
- </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="home">
+
+    <nav class="navbar">
+      <div class="logo">Your Name</div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h1>Your Name</h1>
+      <p class="tagline">Java Developer & Open Source Enthusiast</p>
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <div class="scroll-cue">
+        <a href="#projects" aria-label="Scroll to projects">↓</a>
+      </div>
+    </div>
+
+  </header>
+
+  <section id="about">
+
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src=".\images\caceres_john.jpeg" alt="John's photo" class="about-photo" />
+      <div class="about-text">
+        <p>
+          Hi, I'm John—a Java developer with a passion for building clean, efficient desktop applications. I enjoy solving real-world problems through code and contributing to open source when I can.
+        </p>
+        <ul class="skills-list">
+          <li>Java & OOP fundamentals</li>
+          <li>Building desktop apps with JavaFX</li>
+          <li>Passion for clean code and open source</li>
+        </ul>
+        <p>You can also <strong>download my résumé</strong> below:</p>
+        <a href=".\pdfs\John_Caceres_Sept_2025.pdf" class="btn btn-secondary" download>Download Résumé</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="projects">
+
+    <h2>Project Showcase</h2>
+    <div class="project-card">
+      <div class="project-media">
+        <video
+          controls
+          preload="metadata"
+          poster=".\images\Slime_Otissey_Trailer_Poster.jpg"
+          width="560"
+          height="315"
+        >
+          <source src=".\videos\Slime_Otissey_Compressed_Trailer.mp4" type="video/mp4" />
+          <source src=".\videos\Slime_Otissey_Compressed_Trailer.webm" type="video/webm" />
+          Your browser doesn’t support HTML5 video.
+        </video>
+      </div>
+
+      <div class="project-info">
+        <h3>Java Video Game (Team Project)</h3>
+        <p>
+          A 2D Java-based game developed as part of a university team. We built
+          custom graphics, sound effects, and basic AI—all in pure Java. This
+          project deepened my understanding of object-oriented design and game
+          loops.
+        </p>
+        <ul class="tech-list">
+          <li>Sprite animation</li>
+          <li>Collision detection</li>
+          <li>Level progression</li>
+          <li>Sound effects & music</li> 
+        </ul>
+        <p class="project-meta">
+          <strong>Tech Stack:</strong> Java, Custom engine<br />
+          <strong>Role:</strong> Gameplay Programmer
+        </p>
+        <a href="SlimeOtissey.jar" class="btn btn-secondary" download>Download .jar</a>
+        <a href="https://github.com/aleenagraveline/SlimeOtissey" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="skills">
+    <h2>Skills &amp; Technologies</h2>
+
+    <div class="skills-grid">
+      <!-- Quadrant 1: Programming Languages -->
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <div class="badges">
+          <span class="badge badge-familiar">C</span>
+          <span class="badge badge-primary">Java</span>
+          <span class="badge badge-primary">JavaScript</span>
+          <span class="badge badge-primary">Python</span>
+          <span class="badge badge-familiar">R</span>
+        </div>
+      </div>
+
+      <!-- Quadrant 2: Tools & Frameworks -->
+      <div class="skill-category">
+        <h3>Tools &amp; Frameworks</h3>
+        <div class="badges">
+          <span class="badge badge-familiar">CLI</span>
+          <span class="badge badge-primary">Git</span>
+          <span class="badge badge-familiar">MySQL</span>
+          <span class="badge badge-primary">Scrum/Agile</span>
+          <span class="badge badge-familiar">Trello</span>
+          <span class="badge badge-primary">VSCode</span>
+        </div>
+      </div>
+
+      <!-- Quadrant 3: Design & Markup -->
+      <div class="skill-category">
+        <h3>Design &amp; Markup</h3>
+        <div class="badges">
+          <span class="badge badge-primary">CSS</span>
+          <span class="badge badge-primary">HTML</span>
+          <span class="badge badge-familiar">LaTeX</span>
+        </div>
+      </div>
+
+      <!-- Quadrant 4: Other Skills -->
+      <div class="skill-category">
+        <h3>Other Skills</h3>
+        <div class="badges">
+          <span class="badge badge-familiar">Canva</span>
+          <span class="badge badge-familiar">Excel</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="script.js"></script>
+</body>
 </html>
