@@ -18,12 +18,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-sans);
   line-height: 1.6;
   color: var(--color-text);
   background: var(--color-bg);
-  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -129,6 +133,10 @@ body {
   font-size: 2rem;
   animation: bounce 2s infinite;
 }
+#scroll-arrow {
+  color: var(--color-bg);
+}
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
   40% { transform: translateY(-10px); }
@@ -140,6 +148,16 @@ body {
   .hero h1 {
     font-size: 3rem;
   }
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.section{
+  scroll-snap-align: start;
 }
 
 /* About Me Section */

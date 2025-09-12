@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>John Caceres | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -92,7 +92,7 @@
   <header id="home">
 
     <nav class="navbar">
-      <div class="logo">Your Name</div>
+      <div class="logo">John Caceres</div>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -103,322 +103,324 @@
     </nav>
 
     <div class="hero">
-      <h1>Your Name</h1>
-      <p class="tagline">Java Developer & Open Source Enthusiast</p>
+      <h1>John Caceres</h1>
+      <p class="tagline">Undergraduate Student, Researcher, & Developer</p>
       <a href="#projects" class="btn btn-primary">View My Work</a>
       <div class="scroll-cue">
-        <a href="#projects" aria-label="Scroll to projects">↓</a>
+        <a href="#projects" id="scroll-arrow" aria-label="Scroll to projects">↓</a>
       </div>
     </div>
 
   </header>
 
-  <section id="about">
+  <main>
+    <section id="about">
 
-    <h2>About Me</h2>
-    <div class="about-container">
-      <img src=".\images\caceres_john.jpeg" alt="John's photo" class="about-photo" />
-      <div class="about-text">
-        <p>
-          Hi, I'm John—a Java developer with a passion for building clean, efficient desktop applications. I enjoy solving real-world problems through code and contributing to open source when I can.
-        </p>
-        <ul class="skills-list">
-          <li>Java & OOP fundamentals</li>
-          <li>Building desktop apps with JavaFX</li>
-          <li>Passion for clean code and open source</li>
-        </ul>
-        <p>You can also <strong>download my résumé</strong> below:</p>
-        <a href=".\pdfs\John_Caceres_Sept_2025.pdf" class="btn btn-secondary" download>Download Résumé</a>
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img src=".\assets\images\caceres_john.jpeg" alt="John's photo" class="about-photo" />
+        <div class="about-text">
+          <p>
+            Hi, I'm John—a Java developer with a passion for building clean, efficient desktop applications. I enjoy solving real-world problems through code and contributing to open source when I can.
+          </p>
+          <ul class="skills-list">
+            <li>Java & OOP fundamentals</li>
+            <li>Building desktop apps with JavaFX</li>
+            <li>Passion for clean code and open source</li>
+          </ul>
+          <p>You can also <strong>download my résumé</strong> below:</p>
+          <a href=".\pdfs\John_Caceres_Sept_2025.pdf" class="btn btn-secondary" download>Download Résumé</a>
+        </div>
       </div>
-    </div>
 
+    </section>
+
+    <section id="projects">
+
+      <h2>Project Showcase</h2>
+      <div class="project-card">
+        <div class="project-media">
+          <video
+            controls
+            preload="metadata"
+            poster=".\assets\images\Slime_Otissey_Trailer_Poster.jpg"
+            width="560"
+            height="315"
+          >
+            <source src=".\assets\videos\Slime_Otissey_Compressed_Trailer.mp4" type="video/mp4" />
+            <source src=".\assets\videos\Slime_Otissey_Compressed_Trailer.webm" type="video/webm" />
+            Your browser doesn’t support HTML5 video.
+          </video>
+        </div>
+
+        <div class="project-info">
+          <h3>Java Video Game (Team Project)</h3>
+          <p>
+            A 2D Java-based game developed as part of a university team. We built
+            custom graphics, sound effects, and basic AI—all in pure Java. This
+            project deepened my understanding of object-oriented design and game
+            loops.
+          </p>
+          <ul class="tech-list">
+            <li>Sprite animation</li>
+            <li>Collision detection</li>
+            <li>Level progression</li>
+            <li>Sound effects & music</li> 
+          </ul>
+          <p class="project-meta">
+            <strong>Tech Stack:</strong> Java, Custom engine<br />
+            <strong>Role:</strong> Gameplay Programmer
+          </p>
+          <a href="SlimeOtissey.jar" class="btn btn-secondary" download>Download .jar</a>
+          <a href="https://github.com/aleenagraveline/SlimeOtissey" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="skills">
+      <h2>Skills &amp; Technologies</h2>
+
+      <div class="skills-grid">
+        <!-- Quadrant 1: Programming Languages -->
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="badges">
+            <!-- C Badge-->
+            <span class="badge badge-familiar" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-c"></use>
+              </svg>
+              C
+            </span>
+            <!-- Java Badge-->
+            <span class="badge badge-primary" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-java"></use>
+              </svg>
+              Java
+            </span>
+            <!-- JavaScript Badge-->
+            <span class="badge badge-primary" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-javascript"></use>
+              </svg>
+              JavaScript
+            </span>
+            <!-- Python Badge-->
+            <span class="badge badge-primary" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-python"></use>
+              </svg>
+              Python
+            </span>
+            <!-- R Badge-->
+            <span class="badge badge-familiar" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-r"></use>
+              </svg>
+              R
+            </span>
+          </div>
+        </div>
+
+        <!-- Quadrant 2: Tools & Frameworks -->
+        <div class="skill-category">
+          <h3>Tools &amp; Frameworks</h3>
+          <div class="badges">
+            <!-- CLI Badge-->
+            <span class="badge badge-familiar" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-cli"></use>
+              </svg>
+              CLI
+            </span>
+            <!-- Git Badge-->
+            <span class="badge badge-primary" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-git"></use>
+              </svg>
+              Git
+            </span>
+            <!-- MySQL Badge-->
+            <span class="badge badge-familiar" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-mysql"></use>
+              </svg>
+              MySQL
+            </span>
+            <!-- Scrum/Agile Badge-->
+            <span class="badge badge-primary" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-scrum"></use>
+              </svg>
+              Scrum/Agile
+            </span>
+            <!-- Trello Badge-->
+            <span class="badge badge-primary" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-trello"></use>
+              </svg>
+              Trello
+            </span>
+            <!-- VSCode Badge-->
+            <span class="badge badge-primary" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-vscode"></use>
+              </svg>
+              VSCode
+            </span>
+          </div>
+        </div>
+
+        <!-- Quadrant 3: Design & Markup -->
+        <div class="skill-category">
+          <h3>Design &amp; Markup</h3>
+          <div class="badges">
+            <!-- CSS Badge-->
+            <span class="badge badge-primary" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-css"></use>
+              </svg>
+              CSS
+            </span>
+            <!-- HTML Badge-->
+            <span class="badge badge-primary" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-html5"></use>
+              </svg>
+              HTML
+            </span>
+            <!-- LaTeX Badge-->
+            <span class="badge badge-familiar" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-latex"></use>
+              </svg>
+              LaTeX
+            </span>
+          </div>
+        </div>
+
+        <!-- Quadrant 4: Other Skills -->
+        <div class="skill-category">
+          <h3>Other Skills</h3>
+          <div class="badges">
+            <!-- Canva Badge-->
+            <span class="badge badge-familiar" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-canva"></use>
+              </svg>
+              Canva
+            </span>
+            <!-- Excel Badge-->
+            <span class="badge badge-familiar" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-excel"></use>
+              </svg>
+              Excel
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+    <h2>Contact &amp; Social Links</h2>
+    <ul class="social-list" role="list">
+      <li>
+        <a href="mailto:John.Caceres@quinnipiac.edu" class="social-link" aria-label="Email John Caceres">
+          <svg class="social-icon" aria-hidden="true">
+            <use href="#icon-email"></use>
+          </svg>
+          <span class="social-text">John.Caceres@quinnipiac.edu</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/jjcac" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="John Caceres on GitHub">
+          <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <use href="#icon-github"></use>
+          </svg>
+          <span class="social-text">github.com/jjcac</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/johnjcaceres" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="John Caceres on LinkedIn">
+          <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <use href="#icon-linkedin"></use>
+          </svg>
+          <span class="social-text">linkedin.com/in/johnjcaceres</span>
+        </a>
+      </li>
+    </ul>
   </section>
-
-  <section id="projects">
-
-    <h2>Project Showcase</h2>
-    <div class="project-card">
-      <div class="project-media">
-        <video
-          controls
-          preload="metadata"
-          poster=".\images\Slime_Otissey_Trailer_Poster.jpg"
-          width="560"
-          height="315"
-        >
-          <source src=".\videos\Slime_Otissey_Compressed_Trailer.mp4" type="video/mp4" />
-          <source src=".\videos\Slime_Otissey_Compressed_Trailer.webm" type="video/webm" />
-          Your browser doesn’t support HTML5 video.
-        </video>
-      </div>
-
-      <div class="project-info">
-        <h3>Java Video Game (Team Project)</h3>
-        <p>
-          A 2D Java-based game developed as part of a university team. We built
-          custom graphics, sound effects, and basic AI—all in pure Java. This
-          project deepened my understanding of object-oriented design and game
-          loops.
-        </p>
-        <ul class="tech-list">
-          <li>Sprite animation</li>
-          <li>Collision detection</li>
-          <li>Level progression</li>
-          <li>Sound effects & music</li> 
-        </ul>
-        <p class="project-meta">
-          <strong>Tech Stack:</strong> Java, Custom engine<br />
-          <strong>Role:</strong> Gameplay Programmer
-        </p>
-        <a href="SlimeOtissey.jar" class="btn btn-secondary" download>Download .jar</a>
-        <a href="https://github.com/aleenagraveline/SlimeOtissey" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
-      </div>
-    </div>
-
-  </section>
-
-  <section id="skills">
-    <h2>Skills &amp; Technologies</h2>
-
-    <div class="skills-grid">
-      <!-- Quadrant 1: Programming Languages -->
-      <div class="skill-category">
-        <h3>Programming Languages</h3>
-        <div class="badges">
-          <!-- C Badge-->
-          <span class="badge badge-familiar" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-c"></use>
-            </svg>
-            C
-          </span>
-          <!-- Java Badge-->
-          <span class="badge badge-primary" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-java"></use>
-            </svg>
-            Java
-          </span>
-          <!-- JavaScript Badge-->
-          <span class="badge badge-primary" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-javascript"></use>
-            </svg>
-            JavaScript
-          </span>
-          <!-- Python Badge-->
-          <span class="badge badge-primary" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-python"></use>
-            </svg>
-            Python
-          </span>
-          <!-- R Badge-->
-          <span class="badge badge-familiar" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-r"></use>
-            </svg>
-            R
-          </span>
-        </div>
-      </div>
-
-      <!-- Quadrant 2: Tools & Frameworks -->
-      <div class="skill-category">
-        <h3>Tools &amp; Frameworks</h3>
-        <div class="badges">
-          <!-- CLI Badge-->
-          <span class="badge badge-familiar" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-cli"></use>
-            </svg>
-            CLI
-          </span>
-          <!-- Git Badge-->
-          <span class="badge badge-primary" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-git"></use>
-            </svg>
-            Git
-          </span>
-          <!-- MySQL Badge-->
-          <span class="badge badge-familiar" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-mysql"></use>
-            </svg>
-            MySQL
-          </span>
-          <!-- Scrum/Agile Badge-->
-          <span class="badge badge-primary" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-scrum"></use>
-            </svg>
-            Scrum/Agile
-          </span>
-          <!-- Trello Badge-->
-          <span class="badge badge-primary" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-trello"></use>
-            </svg>
-            Trello
-          </span>
-          <!-- VSCode Badge-->
-          <span class="badge badge-primary" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-vscode"></use>
-            </svg>
-            VSCode
-          </span>
-        </div>
-      </div>
-
-      <!-- Quadrant 3: Design & Markup -->
-      <div class="skill-category">
-        <h3>Design &amp; Markup</h3>
-        <div class="badges">
-          <!-- CSS Badge-->
-          <span class="badge badge-primary" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-css"></use>
-            </svg>
-            CSS
-          </span>
-          <!-- HTML Badge-->
-          <span class="badge badge-primary" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-html5"></use>
-            </svg>
-            HTML
-          </span>
-          <!-- LaTeX Badge-->
-          <span class="badge badge-familiar" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-latex"></use>
-            </svg>
-            LaTeX
-          </span>
-        </div>
-      </div>
-
-      <!-- Quadrant 4: Other Skills -->
-      <div class="skill-category">
-        <h3>Other Skills</h3>
-        <div class="badges">
-          <!-- Canva Badge-->
-          <span class="badge badge-familiar" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-canva"></use>
-            </svg>
-            Canva
-          </span>
-          <!-- Excel Badge-->
-          <span class="badge badge-familiar" tabindex="0">
-            <svg
-              class="badge-icon"
-              aria-hidden="true"
-              fill="currentColor"
-            >
-              <use href="#icon-excel"></use>
-            </svg>
-            Excel
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-  <h2>Contacts &amp; Social Links</h2>
-  <ul class="social-list" role="list">
-    <li>
-      <a href="mailto:john.doe@example.com" class="social-link" aria-label="Email John Doe">
-        <svg class="social-icon" aria-hidden="true">
-          <use href="#icon-email"></use>
-        </svg>
-        <span class="social-text">john.doe@example.com</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/johndoe" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="John Doe on GitHub">
-        <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
-          <use href="#icon-github"></use>
-        </svg>
-        <span class="social-text">github.com/johndoe</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://linkedin.com/in/johndoe" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="John Doe on LinkedIn">
-        <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
-          <use href="#icon-linkedin"></use>
-        </svg>
-        <span class="social-text">linkedin.com/in/johndoe</span>
-      </a>
-    </li>
-  </ul>
-</section>
+</main>
 
 <footer class="site-footer">
-  <p>John Doe © 2025</p>
+  <p>John Caceres © 2025</p>
 </footer>
 
   <script src="script.js"></script>
