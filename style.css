@@ -387,22 +387,22 @@ body {
 }
 
 .badge-icon {
-  width: 5em;
-  height: 5em;
+  width: 1em;
+  height: 1em;
   margin-right: 0.4em;
   vertical-align: text-bottom;
   fill: currentColor;
 }
 
 .badge-primary {
-  --excel-x-fill: var(--color-primary);
+  --inner-fill: var(--color-primary);
   background-color: var(--color-primary);
   color: var(--color-white);
   border: none;
 }
 
 .badge-familiar {
-  --excel-x-fill: var(--color-bg);
+  --inner-fill: var(--color-bg);
   background-color: transparent;
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
@@ -424,14 +424,14 @@ body {
 }
 
 .badge-primary:hover {
-  --excel-x-fill: var(--color-primary-dark);
+  --inner-fill: var(--color-primary-dark);
   background-color: var(--color-primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .badge-familiar:hover {
-  --excel-x-fill: var(--color-primary);
+  --inner-fill: var(--color-primary);
   background-color: var(--color-primary);
   color: var(--color-white);
   border-color: var(--color-primary);
@@ -452,4 +452,67 @@ body {
   outline: none;
   outline-offset: 2px;
   box-shadow: 0 0 0 3px var(--color-primary, rgba(0, 128, 0, 0.4));
+}
+
+/* Section wrapper */
+#contact {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+/* Social links list */
+.social-list {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Individual link styling */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--color-primary-dark);
+}
+
+/* Icon size and spacing */
+.social-icon {
+  --inner-fill: var(--color-bg);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  fill: currentColor;
+}
+
+#icon-email {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* Footer styling */
+.site-footer {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md) 0;
+  background-color: rgba(0, 122, 204, 0.08);
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
 }
