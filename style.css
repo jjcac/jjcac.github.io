@@ -150,15 +150,18 @@ body {
   }
 }
 
-main {
+/* Uncomment to separate the main html elements as its
+    own scrollable subsection */
+
+/* main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-}
+} */
 
-.section{
+/* .section{
   scroll-snap-align: start;
-}
+} */
 
 /* About Me Section */
 #about {
