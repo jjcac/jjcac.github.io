@@ -431,10 +431,14 @@ body {
   border: 1px solid var(--color-primary);
 }
 
-/* Responsive: Stack Quadrants on Mobile */
+/* Responsive: Stack Quadrants on Mobile and Prevent Overflow*/
 @media (max-width: 700px) {
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .badges {
+    grid-template-columns: repeat(2, max-content);
   }
 }
 
