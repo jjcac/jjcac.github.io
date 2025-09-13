@@ -95,6 +95,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -103,10 +104,10 @@
 
     <div class="hero">
       <h1>John Caceres</h1>
-      <p class="tagline">Undergraduate Student, Researcher, & Developer</p>
+      <p class="tagline">Undergraduate Mathematician, Computer Scientist, & Chess Enthusiast</p>
       <a href="#projects" class="btn btn-primary">View My Work</a>
       <div class="scroll-cue">
-        <a href="#projects" id="scroll-arrow" aria-label="Scroll to projects">↓</a>
+        <a id="scroll-arrow" aria-label="Scroll to learn about me">↓</a>
       </div>
     </div>
 
@@ -119,14 +120,15 @@
       <div class="about-container">
         <img src=".\assets\images\caceres_john.jpeg" alt="John's photo" class="about-photo" />
         <div class="about-text">
-          <p>
-            Hi, I'm John—a Java developer with a passion for building clean, efficient desktop applications. I enjoy solving real-world problems through code and contributing to open source when I can.
+          <p>Hi, I'm John!</p>
+
+          <p>With a dual major in Mathematics and Computer Science, I'm always on the lookout for a good problem to solve.
+             I'm comfortable in <a href="#skills" class="social-link" aria-label="See my skill set">Java and other familiar languages</a>, but I also love exploring new ones as projects demand.
+             Whether I'm unraveling abstract theorems in class or architecting solutions to computational challenges, my top priority is gaining deep understanding before moving forward.
           </p>
-          <ul class="skills-list">
-            <li>Java & OOP fundamentals</li>
-            <li>Building desktop apps with JavaFX</li>
-            <li>Passion for clean code and open source</li>
-          </ul>
+
+          <p>Off-screen, I lead the Quinnipiac Math Club, explore lesser-known theorems, and tackle logic puzzles to keep my skills sharp and my curiosity alive.</p>
+          
           <p>You can also <strong>download my résumé</strong> below:</p>
           <a href=".\assets\pdfs\John_Caceres_Sept_2025.pdf" class="btn btn-secondary" download>Download Résumé</a>
         </div>
@@ -148,27 +150,28 @@
           >
             <source src=".\assets\videos\Slime_Otissey_Compressed_Trailer.mp4" type="video/mp4" />
             <source src=".\assets\videos\Slime_Otissey_Compressed_Trailer.webm" type="video/webm" />
-            Your browser doesn’t support HTML5 video.
+            Your browser doesn't support HTML5 video.
           </video>
         </div>
 
         <div class="project-info">
-          <h3>Java Video Game (Team Project)</h3>
+          <h3>"Slime Otissey" Video Game (Team Project)</h3>
           <p>
             A 2D Java-based game developed as part of a university team. We built
-            custom graphics, sound effects, and basic AI—all in pure Java. This
-            project deepened my understanding of object-oriented design and game
-            loops.
+            custom graphics, music, and gameplay mechanics, all in pure Java. This
+            project deepened my understanding of the principles of object-oriented design and gameplay
+            loops. This project also introduced me to the Scrum methodology, and was built over the course
+            of five two-week sprints.
           </p>
           <ul class="tech-list">
-            <li>Sprite animation</li>
+            <li>Gameplay loops & action scripting</li>
             <li>Collision detection</li>
             <li>Level progression</li>
-            <li>Sound effects & music</li> 
+            <li>Music & graphics</li> 
           </ul>
           <p class="project-meta">
-            <strong>Tech Stack:</strong> Java, Custom engine<br />
-            <strong>Role:</strong> Gameplay Programmer
+            <strong>Tech Stack:</strong> Java, Custom game engine<br />
+            <strong>Role:</strong> Gameplay Developer
           </p>
           <a href="SlimeOtissey.jar" class="btn btn-secondary" download>Download .jar</a>
           <a href="https://github.com/aleenagraveline/SlimeOtissey" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub</a>
@@ -178,24 +181,13 @@
     </section>
 
     <section id="skills">
-      <h2>Skills &amp; Technologies</h2>
+      <h2>Skills & Technologies</h2>
 
       <div class="skills-grid">
         <!-- Quadrant 1: Programming Languages -->
         <div class="skill-category">
           <h3>Programming Languages</h3>
           <div class="badges">
-            <!-- C Badge-->
-            <span class="badge badge-familiar" tabindex="0">
-              <svg
-                class="badge-icon"
-                aria-hidden="true"
-                fill="currentColor"
-              >
-                <use href="#icon-c"></use>
-              </svg>
-              C
-            </span>
             <!-- Java Badge-->
             <span class="badge badge-primary" tabindex="0">
               <svg
@@ -230,7 +222,7 @@
               Python
             </span>
             <!-- R Badge-->
-            <span class="badge badge-familiar" tabindex="0">
+            <span class="badge badge-primary" tabindex="0">
               <svg
                 class="badge-icon"
                 aria-hidden="true"
@@ -240,24 +232,24 @@
               </svg>
               R
             </span>
-          </div>
-        </div>
-
-        <!-- Quadrant 2: Tools & Frameworks -->
-        <div class="skill-category">
-          <h3>Tools &amp; Frameworks</h3>
-          <div class="badges">
-            <!-- CLI Badge-->
+            <!-- C Badge-->
             <span class="badge badge-familiar" tabindex="0">
               <svg
                 class="badge-icon"
                 aria-hidden="true"
                 fill="currentColor"
               >
-                <use href="#icon-cli"></use>
+                <use href="#icon-c"></use>
               </svg>
-              CLI
+              C
             </span>
+          </div>
+        </div>
+
+        <!-- Quadrant 2: Tools & Frameworks -->
+        <div class="skill-category">
+          <h3>Tools & Frameworks</h3>
+          <div class="badges">
             <!-- Git Badge-->
             <span class="badge badge-primary" tabindex="0">
               <svg
@@ -270,7 +262,7 @@
               Git
             </span>
             <!-- MySQL Badge-->
-            <span class="badge badge-familiar" tabindex="0">
+            <span class="badge badge-primary" tabindex="0">
               <svg
                 class="badge-icon"
                 aria-hidden="true"
@@ -313,12 +305,23 @@
               </svg>
               VSCode
             </span>
+            <!-- CLI Badge-->
+            <span class="badge badge-familiar" tabindex="0">
+              <svg
+                class="badge-icon"
+                aria-hidden="true"
+                fill="currentColor"
+              >
+                <use href="#icon-cli"></use>
+              </svg>
+              CLI
+            </span>
           </div>
         </div>
 
         <!-- Quadrant 3: Design & Markup -->
         <div class="skill-category">
-          <h3>Design &amp; Markup</h3>
+          <h3>Design & Markup</h3>
           <div class="badges">
             <!-- CSS Badge-->
             <span class="badge badge-primary" tabindex="0">
@@ -343,7 +346,7 @@
               HTML
             </span>
             <!-- LaTeX Badge-->
-            <span class="badge badge-familiar" tabindex="0">
+            <span class="badge badge-primary" tabindex="0">
               <svg
                 class="badge-icon"
                 aria-hidden="true"
@@ -388,7 +391,7 @@
     </section>
 
     <section id="contact">
-    <h2>Contact &amp; Social Links</h2>
+    <h2>Contact & Social Links</h2>
     <ul class="social-list" role="list">
       <li>
         <a href="mailto:John.Caceres@quinnipiac.edu" class="social-link" aria-label="Email John Caceres">

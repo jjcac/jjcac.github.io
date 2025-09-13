@@ -202,7 +202,9 @@ body {
   color: var(--color-text-light);
 }
 
-.skills-list {
+/* Depracated */
+
+/* .skills-list {
   list-style: none;
   padding-left: 0;
 }
@@ -216,7 +218,7 @@ body {
   position: absolute;
   left: 0;
   color: var(--color-primary);
-}
+} */
 
 /* Resume Button */
 .btn-secondary {
@@ -408,8 +410,8 @@ body {
 }
 
 .badge-icon {
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   margin-right: 0.4em;
   vertical-align: text-bottom;
   fill: currentColor;
